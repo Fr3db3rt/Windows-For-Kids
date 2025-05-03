@@ -2,7 +2,7 @@
 
 ## Parenting Windows Systems
 
-#### *Check status, logged in time, etc. for local and remote maczhines ...*
+#### *Check status, logged in time, etc., for local and remote machines ...*
 
 ~~~
 C:\> query user
