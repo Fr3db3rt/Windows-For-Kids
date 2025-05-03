@@ -24,19 +24,19 @@ C:\> query session /server:acer-w11-leo
  console           Leo                       3  Aktiv
  rdp-tcp                                 65536  Abhör.
 ```
-
+##  
 #### *Set _Login-Time_ restrictions* to certain hours
-*does only apply to **LOGIN** to certain times...*  
-*does **NOT LOGOUT** users, if they are already logged in!*
-
 ``` powershell
 # in remote PowerShell session:
 [Acer-W11-Leo]: PS C:\> net user Leo /TIMES:"Mo-Fr,13:00-19:00;Sa-So,13:00-15:00"
 Der Befehl wurde erfolgreich ausgefhrt.
-~~~
+```
+*does allow to **LOGIN only** to certain times...*  
+*does **NOT LOGOUT** users, if they are already logged in!*
 
-*verify settings*
-~~~ powershell
+##  
+#### *verify settings*
+``` powershell
 [Acer-W11-Leo]: PS C:\> net user Leo
 Benutzername                        Leo
 Vollst„ndiger Name
