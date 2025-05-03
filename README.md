@@ -14,7 +14,7 @@ C:\> query user /server:$SERVER
  BENUTZERNAME          SITZUNGSNAME       ID  STATUS  LEERLAUF   ANMELDEZEIT
  leo                   console             3  Aktiv       Kein   03.05.2025 18:26
 
-C:\ >query user /server:acer-w11-leo
+C:\> query user /server:acer-w11-leo
  BENUTZERNAME          SITZUNGSNAME       ID  STATUS  LEERLAUF   ANMELDEZEIT
  leo                   console             3  Aktiv       Kein   03.05.2025 18:26
 
