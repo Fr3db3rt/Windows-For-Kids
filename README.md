@@ -14,11 +14,11 @@ C:\> query user /server:$SERVER
  BENUTZERNAME          SITZUNGSNAME       ID  STATUS  LEERLAUF   ANMELDEZEIT
  leo                   console             3  Aktiv       Kein   03.05.2025 18:26
 
-C:\>query user /server:acer-w11-leo
+C:\ >query user /server:acer-w11-leo
  BENUTZERNAME          SITZUNGSNAME       ID  STATUS  LEERLAUF   ANMELDEZEIT
  leo                   console             3  Aktiv       Kein   03.05.2025 18:26
 
-C:\>query session /server:acer-w11-leo
+C:\> query session /server:acer-w11-leo
  SITZUNGSNAME      BENUTZERNAME             ID  STATUS  TYP         GERÄT
  services                                    0  Getr.
  console           Leo                       3  Aktiv
@@ -30,13 +30,14 @@ C:\>query session /server:acer-w11-leo
 *does **NOT LOGOUT** users, if they are already logged in!*
 
 ``` powershell
-[Acer-W11-Leo]: PS C:\Users\Administrator\Documents> net user Leo /TIMES:"Mo-Fr,13:00-19:00;Sa-So,13:00-15:00"
+# in remote PowerShell session:
+[Acer-W11-Leo]: PS C:\> net user Leo /TIMES:"Mo-Fr,13:00-19:00;Sa-So,13:00-15:00"
 Der Befehl wurde erfolgreich ausgefhrt.
 ~~~
 
 *verify settings*
 ~~~ powershell
-[Acer-W11-Leo]: PS C:\Users\Administrator\Documents> net user Leo
+[Acer-W11-Leo]: PS C:\> net user Leo
 Benutzername                        Leo
 Vollst„ndiger Name
 Beschreibung
