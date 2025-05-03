@@ -31,7 +31,7 @@ C:\> query session /server:acer-w11-leo
 [Acer-W11-Leo]: PS C:\> net user Leo /TIMES:"Mo-Fr,13:00-19:00;Sa-So,13:00-15:00"
 Der Befehl wurde erfolgreich ausgefhrt.
 ```
-*does allow to **LOGIN only** to certain times...*  
+*does allow login **only** at certain times...*  
 *does **NOT LOGOUT** users, if they are already logged in!*
 
 ##  
@@ -82,18 +82,18 @@ Samstag, 3. Mai 2025 20:58:09
 [Acer-W11-Leo]: PS C:\> Get-Date -Format "dddd,HH"
 Samsatg,20
 
-# set a variable $NOW with current day and hour with comma between
+# set a variable $NOW with current day and hour with a comma between
 [Acer-W11-Leo]: PS C:\> $NOW = Get-Date -Format "dddd,HH"
 [Acer-W11-Leo]: PS C:\> echo $NOW
 Samsatg,20
 
-# now we can use that variable to allow a login time period within that actual current hour $NOW
+# now we can use that variable to allow a login time period within that actual current day and hour $NOW
 # Example:
 [Acer-W11-Leo]: PS C:\> net user Leo /TIMES:$NOW
 Der Befehl wurde erfolgreich ausgefhrt.
 ```
 
-Verify ...
+#### Verify ...
 ``` powershell
 [Acer-W11-Leo]: PS C:\> net user Leo
 Benutzername                        Leo
@@ -123,3 +123,12 @@ Lokale Gruppenmitgliedschaften      *Benutzer
 Globale Gruppenmitgliedschaften     *Kein
 Der Befehl wurde erfolgreich ausgefhrt.
 ```
+
+#### Let's build a PS-Script ...
+``` powershell
+# playtime.ps1
+$NOW = Get-Date -Format "dddd,HH"
+net user Leo /TIMES:$NOW
+net user Leo
+```
+
