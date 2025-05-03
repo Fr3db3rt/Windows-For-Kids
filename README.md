@@ -2,8 +2,9 @@
 
 ## Parenting Windows Systems
 
+#### *Check status, logged in time, etc. for local and remote maczhines ...*
+
 ~~~
-# List logged in time
 C:\> query user
  BENUTZERNAME          SITZUNGSNAME       ID  STATUS  LEERLAUF   ANMELDEZEIT
  manfred               console             4  Aktiv       Kein   28.04.2025 12:03
