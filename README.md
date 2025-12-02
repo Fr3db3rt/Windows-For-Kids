@@ -130,5 +130,9 @@ Der Befehl wurde erfolgreich ausgefhrt.
 $NOW = Get-Date -Format "dddd,HH"
 net user Leo /TIMES:$NOW
 net user Leo
+
+
+# See also this Link [Fritzbox Kindersicherung](Fritzbox_Kindersicherung.md) for more control over Internet access.
+
 ```
 
